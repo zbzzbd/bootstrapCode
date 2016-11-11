@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 响应式约束，缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maxinum-scale=1,user-scalable=no">
+    <!--通知ie 采用其支持最新模式-->
+    <meta http-equiv="x-ua-compatible",content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .container{
+            width:400px;
+            height: 350px;
+            background:#f5e79e;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body style="background: url('image/back.jpg')">
+    <div class="container">
+            <form role="form">
+                <h3 class="text-center">后台管理系统</h3>
+                <div class="form-group">
+                    <label for="username">用户名：</label>
+                    <input type="text" class="form-control" placeholder="请输入用户名" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="passwd">密码：</label>
+                    <input type="text" class="form-control" placeholder="请输入密码" id="passwd">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> 记住密码
+                    </label>
+
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-block btn-success">登录</button>
+                </div>
+            </form>
+    </div>
+
+</body>
+</html>
